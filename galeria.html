@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Over the Garden Wall</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="gallery-section">
+        <div class="halloween-counter">
+          Do następnego halloween zostało <span id="days-count">...</span> dni.
+        </div>
+        <h1>Galeria</h1>
+        <div class="image-gallery">
+          <div class="gallery-item">
+            <img
+              src="https://a.ltrbxd.com/sm/upload/40/io/1o/c2/otgw%20-%20header.jpg?k=01075b2cbd"
+              alt="Bohaterowie serialu, Wirt i Greg i Beatrice, idący przez las w jasnym świetle dnia"
+            />
+            <p>Bohaterowie serialu</p>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://a.ltrbxd.com/resized/sm/upload/7i/ht/5v/fm/otgw%20-%20stop%20motion%20special-0-1600-0-0.jpg?k=e2f728969c"
+              alt="Wirt i Greg jako lalki"
+            />
+            <p>Świętowanie 10-lecia serialu</p>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://a.ltrbxd.com/sm/upload/5w/0w/68/0l/otgw%20-%20cloud%20city.jpg?k=8630653978"
+              alt="Greg w Mieście w Chmurach otoczony stworami z krainy snów siedzi na słoniu"
+            />
+            <p>Greg w Mieście w Chmurach</p>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <h2>Zwiastun serialu</h2>
+          <video controls width="100%">
+            <source src="film.mp4" type="video/mp4" />
+            Twoja przeglądarka nie obsługuje filmu.
+          </video>
+        </div>
+      </section>
+      <div class="clock">
+        Zegar wskazuje: <span id="live-clock">00:00:00</span>
+      </div>
+    </main>
+    <footer>
+      <p>Sylwia Wójs.</p>
+      <p>
+        Strona internetowa stworzona na potrzeby przedmiotu Wprowadzenie do
+        Aplikacji Internetowych 2026
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

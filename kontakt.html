@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Over the Garden Wall</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="contact-section">
+        <div class="halloween-counter">
+          Do następnego halloween zostało <span id="days-count">...</span> dni.
+        </div>
+        <h1>Formularz kontaktowy</h1>
+        <p>Napisz do mnie</p>
+
+        <form class="styled-form">
+          <div class="form-group">
+            <label for="email">E-Mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Wpisz swój adres e-mail..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Temat wiadomości:</label>
+            <select id="subject" name="subject" required>
+              <option value="">Wybierz temat</option>
+              <option value="serial">informacje o serialu</option>
+              <option value="galeria">pytanie o galerię</option>
+              <option value="inne">inne</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Wiadomość:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Twoja wiadomość..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Wyślij</button>
+        </form>
+      </section>
+      <div class="clock">
+        Zegar wskazuje: <span id="live-clock">00:00:00</span>
+      </div>
+    </main>
+    <footer>
+      <p>Sylwia Wójs.</p>
+      <p>
+        Strona internetowa stworzona na potrzeby przedmiotu Wprowadzenie do
+        Aplikacji Internetowych 2026
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

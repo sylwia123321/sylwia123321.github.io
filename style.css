@@ -1,0 +1,203 @@
+:root {
+  background-color: #331e05;
+}
+
+.logo {
+  color: black;
+}
+
+body {
+  font-family: "Papyrus";
+  color: antiquewhite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.navbar {
+  background-color: khaki;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border: 2px solid;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-links a:hover {
+  color: saddlebrown;
+}
+
+.main-container {
+  flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.intro {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.intro h1 {
+  text-align: center;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.intro-card {
+  padding: 20px;
+  border-radius: 7px;
+  border: 1px solid;
+}
+
+.intro-card h2 {
+  margin-bottom: 10px;
+}
+
+.styled-form {
+  border-radius: 7px;
+  border: 1px solid;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+#subject {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.7em 0;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border-radius: 7px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.gallery-section h1,
+.contact-section h1 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.gallery-section p,
+.contact-section p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.gallery-item {
+  border-radius: 7px;
+  overflow: hidden;
+  width: 260px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 5px;
+}
+
+.video-container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 15px;
+  border-radius: 7px;
+  border: 1px solid;
+}
+
+.video-container h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#trailer {
+  width: 100%;
+}
+
+footer {
+  background-color: khaki;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.halloween-counter,
+.clock {
+  margin: 25px 0;
+  padding: 15px;
+  background-color: #2a1b0e;
+  border: 1.5px solid #a55b26;
+  border-radius: 5px;
+  text-align: center;
+  color: #ebe7d9;
+  font-family: monospace;
+}
+
+@media (max-width: 765px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .main-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 0.5em;
+  }
+}
